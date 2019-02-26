@@ -1,0 +1,1139 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Documentations for modern Wordpress development">
+      
+      
+        <link rel="canonical" href="https://edelstorm.github.io/english/cdn-en/">
+      
+      
+        <meta name="author" content="Dorian Lannay & Marie Suchodolski">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.0.1">
+    
+    
+      
+        <title>Content Delivery Network - Documentations</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.982221ab.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#e91e63">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1f0bcf2b.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
+        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "None", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="pink" data-md-color-accent="orange">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#content-delivery-network-aws" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://edelstorm.github.io/english/" title="Documentations" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Documentations
+            </span>
+            <span class="md-header-nav__topic">
+              Content Delivery Network
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/edelstorm/english.git" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    edelstorm/documentations
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://edelstorm.github.io/english/" title="Documentations" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Documentations
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/edelstorm/english.git" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    edelstorm/documentations
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../AWS-introduction/" title="Amazon Web Services EN" class="md-nav__link">
+      Amazon Web Services EN
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../sign-up/" title="Sign Up" class="md-nav__link">
+      Sign Up
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../domain-name/" title="Domain name" class="md-nav__link">
+      Domain name
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../instance-creation/" title="Instance creation" class="md-nav__link">
+      Instance creation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../run-cloud-en/" title="RunCloud EN" class="md-nav__link">
+      RunCloud EN
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Content Delivery Network
+      </label>
+    
+    <a href="./" title="Content Delivery Network" class="md-nav__link md-nav__link--active">
+      Content Delivery Network
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#s3-bucket" title="S3 Bucket" class="md-nav__link">
+    S3 Bucket
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iam-policy" title="IAM Policy" class="md-nav__link">
+    IAM Policy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iam-user" title="IAM User" class="md-nav__link">
+    IAM User
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iam-key-injection" title="IAM key injection" class="md-nav__link">
+    IAM key injection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#certificate-manager" title="Certificate Manager" class="md-nav__link">
+    Certificate Manager
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloudfront" title="Cloudfront" class="md-nav__link">
+    Cloudfront
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wp-offload-media" title="WP Offload Media" class="md-nav__link">
+    WP Offload Media
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#s3-bucket" title="S3 Bucket" class="md-nav__link">
+    S3 Bucket
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iam-policy" title="IAM Policy" class="md-nav__link">
+    IAM Policy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iam-user" title="IAM User" class="md-nav__link">
+    IAM User
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iam-key-injection" title="IAM key injection" class="md-nav__link">
+    IAM key injection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#certificate-manager" title="Certificate Manager" class="md-nav__link">
+    Certificate Manager
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloudfront" title="Cloudfront" class="md-nav__link">
+    Cloudfront
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wp-offload-media" title="WP Offload Media" class="md-nav__link">
+    WP Offload Media
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="content-delivery-network-aws">Content Delivery Network <small>- AWS</small><a class="headerlink" href="#content-delivery-network-aws" title="Permanent link">&para;</a></h1>
+<h2 id="s3-bucket">S3 Bucket<a class="headerlink" href="#s3-bucket" title="Permanent link">&para;</a></h2>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/VQztyuW6X24?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+<hr />
+<div class="admonition info">
+<p class="admonition-title">S3</p>
+<p>S3 is a service that enables users to load your website’s media faster.</p>
+</div>
+<dl>
+<dt><strong>S3 bucket creation</strong></dt>
+<dd>
+<ul>
+<li>Go on your AWS management console, search for the service <em>S3</em> and click on it.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Now that you are in the S3 interface, click on <mark class="critic">Create bucket</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Name your bucket and choose the same region that you choose for your Lightsail instance.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <mark class="critic">Next</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Leave the option by default and click on <mark class="critic">Next</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Uncheck all the boxes so your bucket becomes public.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <mark class="critic">Next</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Check that everything is good and click on <mark class="critic">Create bucket</mark>.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition success">
+<p class="admonition-title">A storage S3 public bucket is now available! It will enable faster loading of your media on Wordpress.</p>
+</div>
+<hr />
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/R1d245Z0Z0k?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+<hr />
+<dl>
+<dt><strong>S3 bucket permissions</strong></dt>
+<dd>
+<ul>
+<li>Click on your S3 bucket, then click on <mark class="critic">Permissions</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <mark class="critic">Bucket Policy</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Copy / paste the following policy on the editor : 
+<div class="codehilite"><pre><span></span><span class="o">{</span>
+ <span class="s2">&quot;Version&quot;</span>: <span class="s2">&quot;2008-10-17&quot;</span>,
+ <span class="s2">&quot;Statement&quot;</span>: <span class="o">[</span>
+ <span class="o">{</span>
+  <span class="s2">&quot;Sid&quot;</span>: <span class="s2">&quot;AllowPublicRead&quot;</span>,
+  <span class="s2">&quot;Effect&quot;</span>: <span class="s2">&quot;Allow&quot;</span>,
+  <span class="s2">&quot;Principal&quot;</span>: <span class="o">{</span>
+   <span class="s2">&quot;AWS&quot;</span>: <span class="s2">&quot;*&quot;</span>
+  <span class="o">}</span>,
+  <span class="s2">&quot;Action&quot;</span>: <span class="s2">&quot;s3:GetObject&quot;</span>,
+  <span class="s2">&quot;Resource&quot;</span>: <span class="s2">&quot;arn:aws:s3:::YourBucketName/*&quot;</span>
+ <span class="o">}</span>
+ <span class="o">]</span>
+<span class="o">}</span>
+</pre></div></li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Don't forget to switch <em>YourBucketName</em> with the name you gave your bucket.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Once the policy edited, click on <mark class="critic">Save</mark>.</li>
+</ul>
+</dd>
+</dl>
+<hr />
+<h2 id="iam-policy">IAM Policy<a class="headerlink" href="#iam-policy" title="Permanent link">&para;</a></h2>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/0hcbrfL1JCU?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+<hr />
+<dl>
+<dt><strong>IAM policy initialization</strong></dt>
+<dd>
+<ul>
+<li>Go back to the Management Console by clicking on the AWS top left logo.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Search for the IAM service and click on the result.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>In the left menu, click on <mark class="critic">Policies</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <mark class="critic">Create policy</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>To access the online editor, click on the <mark class="critic">JSON</mark> menu.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Once in the editor, delete the existing content and copy / paste the IAM policy below:
+<div class="codehilite"><pre><span></span><span class="o">{</span>
+ <span class="s2">&quot;Version&quot;</span>: <span class="s2">&quot;2012-10-17&quot;</span>,
+ <span class="s2">&quot;Statement&quot;</span>: <span class="o">[</span>
+ <span class="o">{</span>
+  <span class="s2">&quot;Effect&quot;</span>: <span class="s2">&quot;Allow&quot;</span>,
+  <span class="s2">&quot;Action&quot;</span>: <span class="o">[</span>
+   <span class="s2">&quot;s3:CreateBucket&quot;</span>,
+   <span class="s2">&quot;s3:DeleteObject&quot;</span>,
+   <span class="s2">&quot;s3:Put*&quot;</span>,
+   <span class="s2">&quot;s3:Get*&quot;</span>,
+   <span class="s2">&quot;s3:List*&quot;</span>
+  <span class="o">]</span>,
+  <span class="s2">&quot;Resource&quot;</span>: <span class="o">[</span>
+   <span class="s2">&quot;arn:aws:s3:::YourBucketName&quot;</span>,
+   <span class="s2">&quot;arn:aws:s3:::YourBucketName/*&quot;</span>
+  <span class="o">]</span>
+ <span class="o">}</span>
+ <span class="o">]</span>
+<span class="o">}</span>
+</pre></div></li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Don't forget to replace two times <em>YourBucketName</em> by the name you chose for your bucket.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <mark class="critic">Review policy</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Name the IAM policy.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <mark class="critic">Create policy</mark>.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition success">
+<p class="admonition-title">The IAM policy is now ready to be used for your future IAM user.</p>
+</div>
+<hr />
+<h2 id="iam-user">IAM User<a class="headerlink" href="#iam-user" title="Permanent link">&para;</a></h2>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/eC6ZIXPpCeI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+<hr />
+<dl>
+<dt><strong>IAM policy and IAM user linking</strong></dt>
+<dd>
+<ul>
+<li>In the left menu, click on <mark class="critic">Users</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <mark class="critic">Add user</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Choose a name for your IAM user.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Check the <em>Programmatic access</em> box.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <mark class="critic">Next: Permissions</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <em>Attach existing policies</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Type your IAM policy name in the search bar.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Check the box to select your IAM policy and click on <mark class="critic">Next: Tags</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <mark class="critic">Next: Review</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <mark class="critic">Create user</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>To keep your access in a separate file, click on <mark class="critic">Download .csv</mark>.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition warning">
+<p class="admonition-title">Keep this window open for the next step and don't forget to copy/paste and save your Access key ID and Secret access key in a secure place.</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Congratulations! Your IAM user is now liked to the right IAM policy and you have the two access keys.</p>
+</div>
+<hr />
+<h2 id="iam-key-injection">IAM key injection<a class="headerlink" href="#iam-key-injection" title="Permanent link">&para;</a></h2>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/_mJp7YdtVEk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+<hr />
+<dl>
+<dt><strong>IAM access key injection in Wordpress</strong></dt>
+<dd>
+<ul>
+<li>Go to your Runcloud.io homepage</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>On the left menu, click on <em>Web Applications</em> and click on your Wordpress application.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <mark class="critic">File Manager</mark> in the left menu.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Select the <em>wp-config.php</em> file, then click on the <mark class="critic">View/Edit</mark> menu.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Once in the editor, copy/paste the command below after <code class="codehilite">define(&#39;WP_DEBUG&#39;, false);</code> : 
+<div class="codehilite"><pre><span></span>define<span class="o">(</span> <span class="s1">&#39;AS3CF_SETTINGS&#39;</span>, serialize<span class="o">(</span> array<span class="o">(</span>
+    <span class="s1">&#39;provider&#39;</span> <span class="o">=</span>&gt; <span class="s1">&#39;aws&#39;</span>,
+    <span class="s1">&#39;access-key-id&#39;</span> <span class="o">=</span>&gt; <span class="s1">&#39;YourAccessKeyID&#39;</span>,
+    <span class="s1">&#39;secret-access-key&#39;</span> <span class="o">=</span>&gt; <span class="s1">&#39;YourAccessKeySecret&#39;</span>,
+<span class="o">)</span> <span class="o">)</span> <span class="o">)</span><span class="p">;</span>
+</pre></div></li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Then go to your IAM interface so you can replace <em>YourAccessKeyID</em> with your access key ID and <em>YourAccessKeySecret</em> with your secret access key.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Type <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your changes.</li>
+</ul>
+</dd>
+</dl>
+<hr />
+<h2 id="certificate-manager">Certificate Manager<a class="headerlink" href="#certificate-manager" title="Permanent link">&para;</a></h2>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/PK7f-W6ZzCU?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+<hr />
+<dl>
+<dt><strong>AWS Certificate creation</strong></dt>
+<dd>
+<ul>
+<li>Go back to the Management Console by clicking on the AWS top left logo.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>On the top right corner, select <em>US East (N. Virginia)</em> location. (I)</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Search for the AWS service <em>Certificate Manager</em> and click on it.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>In the left section <em>Provision certificates</em>, click on <mark class="critic">Get started</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Check the <em>Request a public certificate</em> box and click on <mark class="critic">Request a certificate</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Enter your domain name this way : <code class="codehilite">*.exemple.com</code> and click on <mark class="critic">Next</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Check the <em>DNS validation</em> box and click on <mark class="critic">Review</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Make sure the information on the screen are correct and click on <mark class="critic">Confirm and request</mark>.</li>
+</ul>
+</dd>
+</dl>
+<hr />
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/CM8FkHJJoOI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+<hr />
+<dl>
+<dt><strong>Domain name DNS validation</strong></dt>
+<dd>
+<ul>
+<li>Wait for a moment, AWS is going to generate a DNS CNAME configuration. It will enable you to verify your domain name.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Copy the beginning of the CNAME like so : <code class="codehilite">_55deac851379bd6906fd5f90ed2e95b3</code></li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Go to your Amazon Lightsail interface. Click on <mark class="critic">Networking</mark> then on your DNS zone.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <mark class="critic">Add record</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Select <em>CNAME</em> as a record type. Paste the beginning of the CNAME you copied on the <em>Subdomain</em> field. Then copy the <em>Value</em> you can find on the <em>AWS Certificate Manager</em> page and paste it in the <em>Maps to</em> field.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on the green button to save.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Go back to the <em>AWS Certificate Manager</em>, click on <mark class="critic">Continue</mark> and wait while your domain name gets validated.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition success">
+<p class="admonition-title">Congratulations, you now have generated an AWS certificate for your domain name.</p>
+</div>
+<hr />
+<h2 id="cloudfront">Cloudfront<a class="headerlink" href="#cloudfront" title="Permanent link">&para;</a></h2>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/5atjyQXHVJw?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+<hr />
+<dl>
+<dt><strong>Content Delivery Network Creation</strong></dt>
+<dd>
+<ul>
+<li>Go back to the homepage by clicking on the top left AWS logo.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Search the AWS service <em>Cloudfront</em> and click on it.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <mark class="critic">Create distribution</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>In the <em>Web</em> section, click on <mark class="critic">Get started</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>For the <em>Origin domain name</em> filed, select your S3 bucket.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>In <em>Alternate domain name (CNAMEs)</em>, write this: <code class="codehilite">cdn1.example.com</code>. Replace <em>example.com</em> with your domain name.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Check the <em>Custom SSL Certificate (example.com)</em> box.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Select the ACM certificate matching your domain name.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <mark class="critic">Create distribution</mark>.</li>
+</ul>
+</dd>
+</dl>
+<hr />
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/j10DD5tqosw?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+<hr />
+<dl>
+<dt><strong>CNAME Cloudfront and Amazon Lightsail Mapping</strong></dt>
+<dd>
+<ul>
+<li>Click on the Cloudfront distribution ID.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Copy <em>Domain name</em> content.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Go back to the Lightsail interface, in the Networking section then in your domain name's DNS zone.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Add a record and choose <em>CNAME record</em> on the first field. For the <em>subdomain</em> field type <code class="codehilite">cdn1</code> and for the <em>Maps to</em> field paste the content you just copied. Then save.</li>
+</ul>
+</dd>
+</dl>
+<hr />
+<h2 id="wp-offload-media">WP Offload Media<a class="headerlink" href="#wp-offload-media" title="Permanent link">&para;</a></h2>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/jbT2s1piWME?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+<hr />
+<dl>
+<dt><strong>WP Offload Media plugin installation</strong></dt>
+<dd>
+<ul>
+<li>Go to your Wordpress administration homepage.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <mark class="critic">Plugin &gt; Add New</mark> on the left menu.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Type <em>Amazon S3</em> on the search bar.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Install and activate the <em>WP Offload Media Lite for Amazon S3</em> plugin.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>In the <em>Installed Plugins</em> menu, delete the by default applications.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>In the plugins menu, click on <em>Settings</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Once there, put your S3 bucket name in the field and click on <em>Save Bucket Setting</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>In the <em>URL REWRITING</em> tab, enable the <em>Custom Domain (CNAME)</em> option and put <code class="codehilite">cdn1.example.com</code>. Replace <code class="codehilite">example.com</code> by your domain name.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Enable <em>Force HTTPS</em> option.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <em>Save changes</em>.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition success">
+<p class="admonition-title">Congratulations, you have correctly set your CDN Amazon Cloudfront for your Wordpress website!</p>
+</div>
+<hr />
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../run-cloud-en/" title="RunCloud EN" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                RunCloud EN
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2019 Edelstorm
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://edelstorm.io/" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/squidfunk" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/squidfunk" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/squidfunk" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.43ad2ac2.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
