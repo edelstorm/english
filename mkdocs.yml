@@ -19,18 +19,18 @@
 # IN THE SOFTWARE.
 
 # Project information
-site_name: Material for MkDocs
-site_description: A Material Design theme for MkDocs
-site_author: Martin Donath
-site_url: https://squidfunk.github.io/mkdocs-material/
+site_name: Documentations
+site_description: Documentations for modern Wordpress development
+site_author: Dorian Lannay & Marie Suchodolski
+site_url: https://edelstorm.github.io/english/
 
 # Repository
-repo_name: squidfunk/mkdocs-material
-repo_url: https://github.com/squidfunk/mkdocs-material
+repo_name: edelstorm/documentations
+repo_url: https://github.com/edelstorm/english.git
 edit_uri: ""
 
 # Copyright
-copyright: 'Copyright &copy; 2016 - 2019 Martin Donath'
+copyright: 'Copyright &copy; 2016 - 2019 Edelstorm'
 
 # Configuration
 theme:
@@ -50,11 +50,11 @@ theme:
   feature:
     tabs: true
   palette:
-    primary: indigo
-    accent: indigo
+    primary: pink
+    accent: orange
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Ubuntu
+    code: Ubuntu Mono
   favicon: assets/images/favicon.png
   logo:
     icon: "\uE80C"
@@ -63,7 +63,7 @@ theme:
 extra:
   social:
     - type: globe
-      link: http://struct.cc
+      link: https://edelstorm.io/
     - type: github-alt
       link: https://github.com/squidfunk
     - type: twitter
@@ -75,7 +75,7 @@ extra:
 markdown_extensions:
   - markdown.extensions.admonition
   - markdown.extensions.codehilite:
-      guess_lang: false
+      guess_lang: true
   - markdown.extensions.def_list
   - markdown.extensions.footnotes
   - markdown.extensions.meta
@@ -91,10 +91,7 @@ markdown_extensions:
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.keys
-  - pymdownx.magiclink:
-      repo_url_shorthand: true
-      user: squidfunk
-      repo: mkdocs-material
+  - pymdownx.magiclink
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences
@@ -104,22 +101,12 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Material: index.md
-  - Getting started: getting-started.md
-  - Extensions:
-    - Admonition: extensions/admonition.md
-    - CodeHilite: extensions/codehilite.md
-    - Footnotes: extensions/footnotes.md
-    - Metadata: extensions/metadata.md
-    - Permalinks: extensions/permalinks.md
-    - PyMdown: extensions/pymdown.md
-  - Specimen: specimen.md
-  - Customization: customization.md
-  - Compliance with GDPR: compliance.md
-  - Release notes: release-notes.md
-  - Author's notes: authors-notes.md
-  - Contributing: contributing.md
-  - License: license.md
+  - Amazon Web Services EN: AWS-introduction.md
+  - Sign Up: sign-up.md
+  - Domain name: domain-name.md
+  - Instance creation: instance-creation.md
+  - RunCloud EN: run-cloud-en.md
+  - Content Delivery Network: cdn-en.md
 
 # Google Analytics
 google_analytics:
