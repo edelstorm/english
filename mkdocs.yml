@@ -25,7 +25,7 @@ site_author: Dorian Lannay & Marie Suchodolski
 site_url: https://edelstorm.github.io/english/
 
 # Repository
-repo_name: edelstorm/documentations
+repo_name: edelstorm/english
 repo_url: https://github.com/edelstorm/english.git
 edit_uri: ""
 
@@ -101,11 +101,11 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Amazon Web Services EN: AWS-introduction.md
+  - Amazon Web Services: AWS-introduction.md
   - Sign Up: sign-up.md
   - Domain name: domain-name.md
   - Instance creation: instance-creation.md
-  - RunCloud EN: run-cloud-en.md
+  - RunCloud: run-cloud-en.md
   - Content Delivery Network: cdn-en.md
 
 # Google Analytics

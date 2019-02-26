@@ -68,7 +68,7 @@
 
 ## Hosted zones
 
-<p><a href="../assets/images/aws/nom-de-domaine/en/8.gif" target="_blank"><img alt="Delete Default Hosted Zone Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/en/8.gif"></a></p>
+<p><a href="../assets/images/aws/nom-de-domaine/en/8a.gif" target="_blank"><img alt="Delete Default Hosted Zone Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/en/8a.gif"></a></p>
 
 ***
 
